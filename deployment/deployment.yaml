@@ -35,18 +35,18 @@ spec:
             httpGet:
               path: /api/health
               port: 3000
-            initialDelaySeconds: 10
+            initialDelaySeconds: 20
             periodSeconds: 3
             successThreshold: 1
-            failureThreshold: 3
+            failureThreshold: 5
           readinessProbe:
             httpGet:
               path: /api/health
               port: 3000
-            initialDelaySeconds: 10
+            initialDelaySeconds: 20
             periodSeconds: 3
             successThreshold: 1
-            failureThreshold: 3
+            failureThreshold: 5
   strategy:
     type: RollingUpdate
     rollingUpdate:

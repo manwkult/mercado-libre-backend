@@ -1,13 +1,15 @@
 tags:
 - name: Items
   description: Items API
+- name: Health
+  description: Health
 
 paths:
 # [GET] items
   /api/items:
     get:
       tags:
-      - items
+      - Items
       summary: Find Items by query
       parameters:
       - name: q
@@ -25,7 +27,7 @@ paths:
   /api/items/{id}:
     get:
       tags:
-      - items
+      - Items
       summary: Find Item By Id
       parameters:
       - name: id
@@ -41,16 +43,15 @@ paths:
         500:
           description: 'Server Error'
 
-# definitions
-definitions:
-  items:
-    type: object
-    required:
-        - id
-    properties:
-      id:
-        type: string
-        description: item ID
+# [GET] health
+  /api/health:
+    get:
+      tags:
+      - Health
+      summary: Health
+      responses:
+        200:
+          description: 'OK'
 
 schemes:
  - https

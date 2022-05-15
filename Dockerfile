@@ -5,5 +5,5 @@ COPY . .
 
 RUN npm install
 
-ENV NODE_ENV production
-CMD ["npm", "run", "start"]
+ENV NODE_ENV development
+CMD ["npm", "run", "dev"]

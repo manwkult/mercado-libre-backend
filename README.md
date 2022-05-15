@@ -132,4 +132,4 @@ Con `docker-compose` [http://localhost/swagger/api-docs](http://localhost/swagge
 
 ## Link del proyecto publicado
 
-[Resistance API](http://143.244.202.236/swagger/index.html)
+[Mercado Libre API](http://143.244.202.236/swagger/index.html)

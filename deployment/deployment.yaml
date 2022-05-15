@@ -31,22 +31,22 @@ spec:
             limits:
               memory: "128Mi"
               cpu: "80m"
-          livenessProbe:
-            httpGet:
-              path: /api/health
-              port: 3000
-            initialDelaySeconds: 10
-            periodSeconds: 3
-            successThreshold: 1
-            failureThreshold: 3
-          readinessProbe:
-            httpGet:
-              path: /api/health
-              port: 3000
-            initialDelaySeconds: 10
-            periodSeconds: 3
-            successThreshold: 1
-            failureThreshold: 3
+          # livenessProbe:
+          #   httpGet:
+          #     path: /api/health
+          #     port: 3000
+          #   initialDelaySeconds: 10
+          #   periodSeconds: 3
+          #   successThreshold: 1
+          #   failureThreshold: 3
+          # readinessProbe:
+          #   httpGet:
+          #     path: /api/health
+          #     port: 3000
+          #   initialDelaySeconds: 10
+          #   periodSeconds: 3
+          #   successThreshold: 1
+          #   failureThreshold: 3
   strategy:
     type: RollingUpdate
     rollingUpdate:

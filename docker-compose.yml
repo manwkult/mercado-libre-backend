@@ -13,7 +13,7 @@ services:
       - backend
   server:
     build:
-      context: ./
+      context: ./local
       target: development-build-stage
       dockerfile: Dockerfile
     container_name: server

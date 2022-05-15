@@ -12,11 +12,11 @@ En el aplicativo se creo una pipeline de github actions que corre cuando se real
 
 El pipeline genera la imagen de docker y la sube al container registry de Dockerhub. Una vez realizado esto se reemplazan los datos de ambiente en los manifiestos .yaml de Kubernetes para posteriormente ser aplicados y desplegados en el cluster de Digital Ocean.
 
-[Mercado Libre API](http://143.244.202.236/swagger/index.html)
+[Mercado Libre API](http://206.189.255.152/swagger/api-docs)
 
 ## Infraestructura sobre Kubernetes
 
-[![Kubernetes](https://cdn.filestackcontent.com/RlUuJIVESsOwxSF6qcD9?auto=compress,format)](http://143.244.202.236/swagger/index.html)
+[![Kubernetes](https://cdn.filestackcontent.com/RlUuJIVESsOwxSF6qcD9?auto=compress,format)](http://206.189.255.152/swagger/api-docs)
 
 ### Cluster de Kubernetes en Digital Ocean
 
@@ -132,4 +132,4 @@ Con `docker-compose` [http://localhost/swagger/api-docs](http://localhost/swagge
 
 ## Link del proyecto publicado
 
-[Mercado Libre API](http://143.244.202.236/swagger/index.html)
+[Mercado Libre API](http://206.189.255.152/swagger/api-docs)

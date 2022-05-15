@@ -1,0 +1,10 @@
+# baseURL
+@baseURL = http://localhost:3000
+
+###
+# Find Items by query
+GET {{ baseURL }}/items
+
+###
+# Find Item By Id
+GET {{ baseURL }}/items/1

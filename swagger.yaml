@@ -1,0 +1,57 @@
+tags:
+- name: Items
+  description: Items API
+
+paths:
+# [GET] items
+  /api/items:
+    get:
+      tags:
+      - items
+      summary: Find Items by query
+      parameters:
+      - name: q
+        in: query
+        description: Search Query
+        required: true
+        type: string
+      responses:
+        200:
+          description: 'OK'
+        500:
+          description: 'Server Error'
+
+# [GET] items/id
+  /api/items/{id}:
+    get:
+      tags:
+      - items
+      summary: Find Item By Id
+      parameters:
+      - name: id
+        in: path
+        description: Item Id
+        required: true
+        type: string
+      responses:
+        200:
+          description: 'OK'
+        409:
+          description: 'Conflict'
+        500:
+          description: 'Server Error'
+
+# definitions
+definitions:
+  items:
+    type: object
+    required:
+        - id
+    properties:
+      id:
+        type: string
+        description: item ID
+
+schemes:
+ - https
+ - http

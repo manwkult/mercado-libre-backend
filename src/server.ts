@@ -5,6 +5,6 @@ import validateEnv from '@utils/validateEnv';
 
 validateEnv();
 
-const app = new App([ new ItemsRoute(), new HealthRoute() ]);
+const app = new App([new ItemsRoute(), new HealthRoute()]);
 
 app.listen();
